@@ -17,8 +17,9 @@ public class kafkaConsumer {
 	public void consumemsg(String msg) {
 		log.info(String.format("consuming msg from msg topic:: %s",msg));
 	}
-	@KafkaListener(topics = "msg",groupId = "myGroup")
+	@KafkaListener(topics = "msg", groupId = "mGroup")
 	public void consumejsonmsg(Student msg) {
 		log.info(String.format("consuming msg from msg topic:: %s",msg.toString()));
+		
 	}
 }

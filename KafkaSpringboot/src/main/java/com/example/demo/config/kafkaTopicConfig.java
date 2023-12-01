@@ -10,7 +10,7 @@ public class kafkaTopicConfig {
 	@Bean
 	public NewTopic messageTopic() {
 		return TopicBuilder
-				.name("abcdefghi")
+				.name("msg")
 				.build();
 	}
 }
